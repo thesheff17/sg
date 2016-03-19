@@ -1,0 +1,9 @@
+*.swp
+*~
+*.pyc
+*.py~
+*.log
+*.ropeproject
+*.ipynb_checkpoints
+nohup*
+*.pem
