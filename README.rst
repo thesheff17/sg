@@ -31,6 +31,7 @@ Run as ubuntu user
 
 ::
 
+    $ su ubuntu -
     $ cd /home/ubuntu/
     $ python sg.py
 
@@ -50,7 +51,7 @@ Run as root user
 Run as centos user
 
 ::
-
+    $ su centos -  
     $ cd /home/centos/
     $ python sg.py
 
@@ -86,4 +87,5 @@ lxc centos container testing:
 
    $ lxc-stop -n centos1 && lxc-destroy -n centos1 && lxc-create -n centos1 -t \
    centos -- --release 7 && lxc-start -d -n centos1 && cp linux.py sg.py \
-   /var/lib/lxc/centos1/rootfs/root/ && lxc-attach -n centos1 
+   /var/lib/lxc/centos1/rootfs/root/ && sleep 5 && lxc-attach -n centos1 ifup \
+   eth0 && lxc-attach -n centos1
