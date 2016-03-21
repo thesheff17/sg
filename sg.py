@@ -43,7 +43,7 @@ import boto3
 import linux
 linux = linux.Linux()
 
-# automatically log to file called
+# automatically detect file name being called
 fileName = main.__file__
 fileName = fileName.replace("./", "")
 fileName = fileName.replace(".py", "")

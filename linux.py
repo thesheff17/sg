@@ -36,7 +36,7 @@ import subprocess
 import os
 import shutil
 
-# automatically log to file called
+# automatically detect file name being called
 fileName = main.__file__
 fileName = fileName.replace("./", "")
 fileName = fileName.replace(".py", "")
