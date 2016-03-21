@@ -9,7 +9,7 @@ prerequisites
 ~~~~~~~~~~~~~
 
 Log into the aws dashboard https://aws.amazon.com/console/ and go to:
-AWS Identity and Access Management (IAM). You will need the private and public
+Identity and Access Management (IAM). You will need the private and public
 keys amazon gives you for this service.
 
 ****************
