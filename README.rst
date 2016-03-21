@@ -51,7 +51,8 @@ Run as root user
 Run as centos user
 
 ::
-    $ su centos -  
+
+    $ su centos -
     $ cd /home/centos/
     $ python sg.py
 
