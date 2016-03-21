@@ -8,9 +8,9 @@ Created By Dan Sheffner
 prerequisites
 ~~~~~~~~~~~~~
 
-Log into the aws dashboard https://aws.amazon.com/console/ and go to service
+Log into the aws dashboard https://aws.amazon.com/console/ and go to:
 AWS Identity and Access Management (IAM). You will need the private and public
-key amazon gives you for this service.
+keys amazon gives you for this service.
 
 ****************
 Ubuntu 14.04 LTS
