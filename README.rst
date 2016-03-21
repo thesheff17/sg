@@ -75,15 +75,15 @@ lxc ubuntu container testing:
 
 ::
 
-   $ lxc-stop -n ubuntu1 && lxc-destroy -n ubuntu1 && lxc-create -n ubuntu1 -t
-   download -- --dist ubuntu --release trusty --arch amd64 && lxc-start -d -n
-   ubuntu1 && cp sg.py linux.py /var/lib/lxc/ubuntu1/rootfs/root/ && lxc-attach
+   $ lxc-stop -n ubuntu1 && lxc-destroy -n ubuntu1 && lxc-create -n ubuntu1 -t \
+   download -- --dist ubuntu --release trusty --arch amd64 && lxc-start -d -n \
+   ubuntu1 && cp sg.py linux.py /var/lib/lxc/ubuntu1/rootfs/root/ && lxc-attach \
    -n ubuntu1
 
 lxc centos container testing:
 
 ::
 
-   $ lxc-stop -n centos1 && lxc-destroy -n centos1 && lxc-create -n centos1 -t
-   centos -- --release 7 && lxc-start -d -n centos1 && cp linux.py sg.py
-   /var/lib/lxc/centos1/rootfs/root/ && lxc-attach -n centos1
+   $ lxc-stop -n centos1 && lxc-destroy -n centos1 && lxc-create -n centos1 -t \
+   centos -- --release 7 && lxc-start -d -n centos1 && cp linux.py sg.py \
+   /var/lib/lxc/centos1/rootfs/root/ && lxc-attach -n centos1 
